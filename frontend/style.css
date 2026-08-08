@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 17px;
+    color: #d1d5db;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 40px auto;
+}
+
+
+/* ================= INPUT SECTION ================= */
+
+.input-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+/* ================= CARD ================= */
+
+.card,
+.result-card,
+.suggestions,
+.score-card {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.card h2 {
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #6b7280;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+
+/* ================= TEXTAREA ================= */
+
+textarea {
+    width: 100%;
+    height: 300px;
+
+    resize: vertical;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #111827;
+}
+
+
+/* ================= BUTTON ================= */
+
+#analyzeBtn {
+    display: block;
+
+    margin: 30px auto;
+
+    padding: 15px 40px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #111827;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#analyzeBtn:hover {
+    background: #374151;
+    transform: translateY(-2px);
+}
+
+
+/* ================= RESULTS ================= */
+
+.results-section {
+    margin-top: 40px;
+}
+
+.results-section > h2 {
+    margin-bottom: 20px;
+}
+
+
+/* ================= SCORE ================= */
+
+.score-card {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.score-card p:first-child {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#score {
+    font-size: 60px;
+    font-weight: bold;
+
+    margin: 15px 0;
+}
+
+#scoreMessage {
+    color: #6b7280;
+}
+
+
+/* ================= RESULT GRID ================= */
+
+.result-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+.result-card h3 {
+    margin-bottom: 15px;
+}
+
+.result-card ul {
+    padding-left: 20px;
+}
+
+.result-card li {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+
+/* ================= SUGGESTIONS ================= */
+
+.suggestions h3 {
+    margin-bottom: 10px;
+}
+
+.suggestions p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+
+/* ================= HIDDEN RESULTS ================= */
+
+#results {
+    display: none;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .input-section,
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+}

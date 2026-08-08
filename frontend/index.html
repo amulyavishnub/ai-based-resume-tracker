@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI-Based Resume Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>AI-Based Resume Tracker</h1>
+            <p>Analyze your resume and discover how well it matches a job description.</p>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Input Section -->
+        <section class="input-section">
+
+            <!-- Resume -->
+            <div class="card">
+                <h2>📄 Your Resume</h2>
+
+                <p class="description">
+                    Paste your resume content below.
+                </p>
+
+                <textarea
+                    id="resume"
+                    placeholder="Example:
+
+Amulya Vishnubhotla
+Information Science Engineering Student
+
+Skills:
+Java
+Python
+SQL
+HTML
+CSS
+JavaScript
+React
+Git
+GitHub"
+                ></textarea>
+            </div>
+
+
+            <!-- Job Description -->
+            <div class="card">
+                <h2>💼 Job Description</h2>
+
+                <p class="description">
+                    Paste the job description you want to apply for.
+                </p>
+
+                <textarea
+                    id="jobDescription"
+                    placeholder="Example:
+
+We are looking for a Software Developer Intern.
+
+Required Skills:
+Java
+Python
+JavaScript
+React
+Node.js
+SQL
+Git
+Data Structures
+Algorithms"
+                ></textarea>
+            </div>
+
+        </section>
+
+
+        <!-- Analyze Button -->
+        <button id="analyzeBtn">
+            Analyze Resume
+        </button>
+
+
+        <!-- Results -->
+        <section id="results" class="results-section">
+
+            <h2>📊 Analysis Results</h2>
+
+
+            <!-- Score -->
+            <div class="score-card">
+
+                <p>Resume Match Score</p>
+
+                <div id="score">
+                    0%
+                </div>
+
+                <p id="scoreMessage">
+                    Analyze your resume to see your score.
+                </p>
+
+            </div>
+
+
+            <!-- Skills -->
+            <div class="result-grid">
+
+                <!-- Matching Skills -->
+                <div class="result-card">
+
+                    <h3>✅ Matching Skills</h3>
+
+                    <ul id="matchingSkills"></ul>
+
+                </div>
+
+
+                <!-- Missing Skills -->
+                <div class="result-card">
+
+                    <h3>❌ Missing Skills</h3>
+
+                    <ul id="missingSkills"></ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Suggestions -->
+            <div class="suggestions">
+
+                <h3>💡 Suggestions</h3>
+
+                <p id="suggestionsText">
+                    Your suggestions will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>AI-Based Resume Tracker • Built with HTML, CSS, JavaScript, Node.js, Express & MySQL</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
